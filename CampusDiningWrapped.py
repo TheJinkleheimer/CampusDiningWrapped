@@ -9,6 +9,18 @@ else:
             "area" : "Other"
         },
         {
+            "place" : "Starbucks UU",
+            "spent" : 0.00,
+            "times" : 0,
+            "area" : "Other"
+        },
+        {
+            "place" : "Shake Smart",
+            "spent" : 0.00,
+            "times" : 0,
+            "area" : "Other"
+        },
+        {
             "place" : "Subway PCV",
             "spent": 0.00,
             "times": 0,
@@ -401,7 +413,7 @@ else:
     print(f"\nStats by Quarter (may only work for first years):")
     for q in range(1, quarters[0] + 1):
         quarters[q][2] = quarters[q][1] / quarters[q][0]
-        print(f"Quarter {q + 1} - Spent: ${quarters[q][1]:.2f}\t Transactions: {quarters[q][0]}\t Average: ${(quarters[q][1] / quarters[q][0]):.2f}")
+        print(f"Quarter {q} - Spent: ${quarters[q][1]:.2f}\t Transactions: {quarters[q][0]}\t Average: ${(quarters[q][1] / quarters[q][0]):.2f}")
 
     print(f"\nMost Spent in one transaction: ${highest:.2f}")
     print(f"\nLeast Spent in one transaction: ${lowest:.2f}")
